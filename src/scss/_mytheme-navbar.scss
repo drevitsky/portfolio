@@ -1,0 +1,50 @@
+.navbar-mytheme {
+  .navbar-brand {
+    color: $navbar-mytheme-active-color;
+
+    @include hover-focus {
+      color: $navbar-mytheme-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-mytheme-color;
+
+      @include hover-focus {
+        color: $navbar-mytheme-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-mytheme-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-mytheme-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-mytheme-color;
+    border-color: $navbar-mytheme-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-mytheme-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-mytheme-color;
+    a {
+      color: $navbar-mytheme-active-color;
+
+      @include hover-focus {
+        color: $navbar-mytheme-active-color;
+      }
+    }
+  }
+}

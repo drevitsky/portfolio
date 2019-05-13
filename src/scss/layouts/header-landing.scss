@@ -1,0 +1,270 @@
+// header-landing styles
+.contact__item.contact {
+	&__land--tel {
+		outline: 	1px solid green;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		// background-color: #ffd801;
+		span{
+			font-size: 3rem;
+			font-weight: 100;			
+		}
+
+	}
+	&__center {
+		text-align: center;
+	}
+}
+
+.contact__item.contact__item--land {
+	margin: 1rem;
+}
+.land--call {
+	// border: 4px solid #ffd801aa ;
+	background-color: #00000060;
+	text-transform: uppercase;
+	padding: 1.5rem;
+}  
+.call {
+		font-size: 2.4rem;
+		padding: 1.5rem ;
+		color: #fff;
+
+		&--white {
+			color: #ffd801;
+		}
+
+}
+
+
+.btn-landing {
+	font-size: 2.4rem;
+	background-color: #B32735;
+	line-height: 4rem;
+	white-space:normal;
+	// width: 30rem;
+	text-transform: none;
+	
+}
+a.btn.btn-landing {
+	color: #fff;
+}
+.carousel-item {
+	//border-bottom:  1px solid #777;
+}
+.carousel-item .product{
+	border-bottom: none;
+}
+
+.indicators-circle.active {
+	border-color: #00000050;
+	background-color: #00000090;
+}
+.section-land {
+	background-color: #ffd801;
+	padding: 2rem 0;
+	&--progress {
+		background-color: #00000015;
+	}
+}
+.section-title {
+	font-size: 4.8rem;
+	text-align: center;
+
+}
+.edge-list {
+	list-style-type: none;
+
+}
+.edge-item {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+.img-wrap {
+	border-radius: 50% ;
+	overflow: hidden;
+	border: 2px solid #fff;
+	margin-bottom: 1rem;
+
+	
+}
+.progress-list{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.progress-item {
+	position: relative;
+	// background-color: #00000020;
+	width: 300px;
+    height: 300px;
+   //  display: flex;
+  	// align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    &--title{
+    	margin: 0 auto;
+    	font-size: 2rem;
+    	font-weight: 400;
+    	margin: 2rem 0;
+    	color: #B32735;
+    }
+    &--description{
+    	margin: 0 auto;
+    	font-size: 1.6rem;
+    	font-weight: 300;
+    }
+    
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100%;
+        height: 70%;
+        z-index: 2;
+		// background-color: #00000020;
+		border-top: 1px solid #9998;
+		border-left:3px solid #9998 ;
+	}
+	&:after  {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right:0;
+		width: 90%;
+        height: 70%;
+        // z-index: 2;
+		// background-color: #00000020;
+		border-bottom: 4px solid #B3273580;;
+		border-right:2px solid #B3273599; ;
+	}
+}
+
+.work-list{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.work-item {
+	width: 32rem;
+	position: relative;
+	margin-bottom: 5rem;
+
+	&--title {
+		font-size: 2.4rem;
+		text-align: center;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;		
+		left:50%;
+		transform:translate(-50%,-50%);
+		width: 100%;
+        height: 105%;
+         z-index: -2;
+		// background-color: #00000020;
+		border-top: 1px solid #999f;
+		border-bottom:1px solid #999f ;
+	}
+	&:after  {
+		content: '';
+		position: absolute;
+		top: 50%;		
+		left:50%;
+		transform:translate(-50%,-50%);
+		width: 105%;
+        height: 100%;
+         z-index: -2;
+		// background-color: #00000020;
+		border-left: 1px solid #999f;
+		border-right:1px solid #999f ;
+	}
+}
+
+.step-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.step-item {
+	width: 25rem;
+	background-color: #00000020;
+	margin: 1rem;
+	padding: 1.5rem;
+	border-radius: 10px;
+	&-icon {
+		width: 100px;
+	}
+	&-title {
+		font-size: 3rem;
+		color: #000;
+		font-weight: 300;
+	}
+	&-text {
+		font-size: 2rem;
+	}
+	&-last {
+		background-color: #ffd80190;
+	}
+	&-link {
+		&:hover {
+			color: #000;
+		}
+	}
+
+}
+/*
+Здесь стили примеров работ
+*/
+.work-img {
+	// max-height: 50vh;
+	padding: 1.5rem;
+}
+.work-feature {
+	&--title {
+		font-size: 3rem;
+		text-align: center;
+		color: #000;
+	}
+}
+.feature-list {
+	padding: 0;
+	margin: 0 auto;		
+}
+.feature-item {
+	display: flex;	
+	justify-content: space-between;
+	font-size: 2rem;
+	font-weight: 300;
+	flex-wrap: wrap;
+	&--name {
+		// font-size: 2rem;
+		font-weight: 400;
+		font-style: italic;
+	}
+	&--grow {
+		border-bottom: 1px dotted #777;
+		// outline: 1px solid red;
+		flex-grow: 2;
+		min-width: 2rem;
+	}
+}
+
+.work-gallery,.sample-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.work-img-item {
+	width: 200px;
+	margin: 1rem;
+}
+.sample-img-item {
+	width: 100px;
+	margin: 1rem;
+}

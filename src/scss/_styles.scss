@@ -1,0 +1,617 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet');
+
+$text-font:'Arimo', sans-serif;
+
+$text-color: #e5db74;
+$teg-color: #eb246d;
+$title-color: #a6e22a;
+$art-color:#67d8ef;
+$value-color:#ac80ff;
+$bg-color:#282923;
+$bg-dark:#42433e;
+$bg-gray:#6d6e6a;
+
+@font-face {
+	font-family: 'tech-icon';
+	src: url(../fonts/tech-icon.woff);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 10px;
+}
+
+body {
+	font: 400 1.4rem/1.5 $text-font;
+	min-height: 100%;
+	color: $text-color;
+	background-color: $bg-gray;
+	// background: url('../img/6bg.jpg') left top repeat;
+}
+.container {
+	//border: 1px dotted $bg-gray;
+	//background-color: $bg-color;
+	padding: 0;
+}
+main .container{
+	// min-height: 100vh;
+	 background-color: $bg-color;
+}
+footer {
+	outline: 1px solid red;
+}
+
+a {
+	color: $teg-color;
+}
+
+
+/*
+/  comments
+*/
+
+// lazy-load
+
+ .lazy-load  {
+ 	
+ }
+ .not-load {
+ 	display: none;
+ }
+// header
+
+ header {
+	z-index: 1001;
+	position: relative;
+	
+	//outline: 1px solid red;
+	background-color:$bg-gray;
+
+}
+
+.header_info {
+	display: flex;
+	justify-content: space-between ;
+	flex-wrap: wrap;
+	padding: 1rem 3rem;	
+	// background:
+	   // linear-gradient(110deg, transparent 13px,$bg-color 14px,$bg-color 60%,transparent 50%),
+	   // linear-gradient(250deg,transparent  13px,$bg-color 14px, $bg-color 60%,transparent 50% );
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		width: 90%;
+		height: 1px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 	0;
+		right: 0;
+		// z-index: 10;
+		border-bottom: 2px solid $bg-dark;
+	}
+			
+
+	a{
+		text-decoration: none;
+		color: $teg-color;
+
+		&:hover {
+		color:#fff ;
+		}
+	}
+}
+
+
+
+.navbar {
+	background-color: $bg-gray;
+	padding-top: 15px;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+.nav-item {
+	//margin-right: 3px;
+
+	background:         linear-gradient(110deg, transparent 13px,$bg-dark 14px );
+    box-shadow: 3px 0px 3px  -2px rgba(0,0,0,.5);
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+		
+			background:linear-gradient(110deg, transparent 13px,$bg-color 14px );
+		
+	}
+    
+}
+.nav-link {
+	padding: 1rem 3rem !important;
+	
+}
+.nav-link--text {
+	position: relative;
+	
+	&:after {
+		content: '/>';
+		position: absolute;
+		right: -15px;
+		color: #fff;
+	}
+	&:before {
+		content: '<';
+		position: absolute;
+		color: #fff;
+		left: -10px;
+	}
+}
+.col-lg-6 {
+	// outline:1px solid yellow;
+}
+.row {
+	margin: 0;
+}
+
+.site-title	{
+	color: #fff;
+	text-align: center;
+}
+.site-subtitle	{
+	color: #fff;
+	text-align: center;
+}
+.section {
+
+}
+.section-title {
+	text-align: center;
+	font-size: 3rem;
+	color: $teg-color;
+	a {
+		text-decoration: none;
+
+	}
+}
+.section-text {
+	max-width: 400px;
+	margin: auto;
+}
+
+// .section-text p:last-child:after {
+//   content: '';
+//   margin-left: 10px;
+//   width: 10px;
+//   height: 2px;
+//   background: $text-color;
+//   opacity: 0;
+//   display: inline-block;
+//   animation: blink 0.7s linear infinite alternate;
+// }
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.contacts-title {
+	color:$title-color;
+	span {
+		color: #fff;
+	} 
+}
+.contacts-list {
+	list-style-type: none;
+}
+.contact-item {}
+
+.contact-name {
+	color: $art-color;
+	&:after {
+		//position: absolute;
+		content: ' :';
+		color: #fff;
+	}
+}
+.contact-text {
+	color: $value-color;
+	&:after {
+		//position: absolute;
+		content: ' ;';
+		color: #fff;
+	}
+}
+.contact-item--social {
+	display: flex;
+}
+
+.social-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+.social-link {
+	margin-right: 3rem;
+
+	color: $value-color;
+}
+.breket {
+	color: #fff;
+}
+
+
+//windows style
+
+.window {
+		// display: flex;
+		//outline:1px solid yellow;
+        border-radius: 3px;
+	    border: 1px solid #999;
+	    padding: 0;
+	    background: #e5eaf5;
+	    box-shadow:  0px 0px 1px  1px #fff, 0px 0px 15px  3px #000;
+	    background:linear-gradient(70deg,  $bg-gray 10%, $bg-dark 20% ,  $bg-gray 50%,  $bg-dark 100%);
+
+	    
+	    
+	&-title {
+		padding:  0 10px;
+		color: #000;
+		font-size: 2rem;
+		text-shadow: 0px 0px 10px   #fff;
+	}
+	&-wrap {
+		//border: 1px solid #fff;
+    	padding: 10px;
+		
+	}
+	&-screen {
+		border: 1px solid #fff;
+		color: #fff;
+    	background:#000;
+    	min-width: 100px;
+    	min-height: 100px;
+    	padding: 10px;
+    	padding-bottom: 30px;
+    	font-size: 1.6rem;
+    	border-radius: 3px ;
+    	p:after {
+		  content: '';
+		  margin-left: 10px;
+		  width: 10px;
+		  height: 2px;
+		  background: #fff;
+		  opacity: 0;
+		  display: inline-block;
+		  animation: blink 0.7s linear infinite alternate;
+		}
+	}
+}
+.row-window-title {
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.block-btn {
+	border: 1px solid #999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	display: flex;
+	height: 22px;
+	box-shadow:  0px 0px 1px  1px #fff;
+	// overflow: hidden;
+}
+.win-btn {
+	border: 1px solid #2b3034;
+	padding: 5px;
+	width: 30px;
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	box-shadow: inset 0px 0px 1px  1px #fff;
+	background:linear-gradient(   #d4dbee ,  #4f5d6b 50%,  #3e4b59 80%, #d4dbee );
+	&:hover {
+		background:
+		linear-gradient(#b4d7ee ,#82b5d7 50%,#0b5f9a 80%,#28ccda);
+		box-shadow: inset 0px 0px 1px  1px #fff,0px 0px 10px  2px #0bbcfe, inset 0px 0px 3px  1px #0bfefb ;
+	}
+}
+.win-btn:first-child {
+	border-bottom-left-radius: 5px;
+}
+.win-btn:last-child {
+	//border: 1px solid #999;
+	//width: 30px;
+	//height: 25px;
+	border-bottom-right-radius: 5px;
+	background:linear-gradient(   #dd9f95 ,  #c5786c 50%,  #9f382a 80%, #dd9f95 );
+	&:hover {
+		background:
+		linear-gradient(#f49b8b ,#e3715d 50%,#b4230c 80%,#e17225);
+		box-shadow: inset 0px 0px 1px  1px #fff,0px 0px 10px  2px #ee512a, inset 0px 0px 3px  1px #d97056 ;
+	}
+}
+.win-btn-1 {
+ background-color: #fff;
+ height: 4px;
+ width: 12px;
+ border: 1px solid #535666;
+ 
+
+}
+.win-btn-2 {
+ 
+ height: 10px;
+ width: 12px;
+ border: 2px solid #fff;
+ box-shadow: inset 0px 0px 0px  1px #535666,0px 0px 0px  1px #535666;
+}
+
+.win-btn-3 {
+ height: 10px;
+ width: 11px;
+ background:url('/img/cross-2.png') left top no-repeat;	
+}
+//============================================
+
+// tech-icon list style
+.tech-list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+.icon {
+	font-family: tech-icon;
+	margin-right: 1.5rem;
+}
+.icon-css:before {
+	content: "\103";
+	font-size: 6rem;
+}
+.icon-html:before {
+	content: "\106";
+	font-size: 6rem;
+}
+.icon-js:before {
+	content: "\108";
+	font-size: 6rem;
+}
+.icon-gulp:before {
+	content: "\100";
+	font-size: 6rem;
+}
+.icon-jquery:before {
+	content: "\107";
+	font-size: 6rem;
+}
+.icon-bootstrap:before {
+	content: "\102";
+	font-size: 6rem;
+}
+.icon-sass:before {
+	content: "\111";
+	font-size: 6rem;
+}
+.icon-photoshop:before {
+	content: "\109";
+	font-size: 6rem;
+}
+.icon-svg:before {
+	content: "\113";
+	font-size: 6rem;
+}
+.icon-wordpress:before {
+	content: "\114";
+	font-size: 6rem;
+}
+.icon-git:before {
+	content: "\101";
+	font-size: 6rem;
+}
+.icon-github:before {
+	content: "\105";
+	font-size: 6rem;
+}
+// ====================================
+
+// article style
+
+.article-title {
+	color: $title-color;
+	&:after {
+		content: ' {';
+		color: #fff;	
+	}
+}
+.skill-list {
+	list-style-type: none;
+	position: relative;
+	&:after {
+		content: ' }';
+		color: #fff;	
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		//background-color: #fff;
+		z-index: 10;
+		border-right: 1px dotted $bg-gray;
+			
+	}
+
+}
+// exp-list
+.exp-list {
+	list-style-type: none;
+	position: relative;
+	&:after {
+		content: ' }';
+		color: #fff;	
+	}
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	//background-color: #fff;
+	// 	z-index: 10;
+	// 	border-right: 1px dotted $bg-gray;
+			
+	// }
+
+}
+.exp-item {
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	border-left: 1px dotted $bg-gray;
+	&-title {
+		font-size: 1.8rem;
+	}
+	&-name {
+		color: $bg-gray;
+	}
+	&-data {
+		color: $value-color;
+	}
+	&-description {
+		color: #fff;
+	}
+}
+
+
+
+
+
+.modal {
+	font-size: 3rem;
+	line-height: 0.5;
+	&-title {
+		color: $teg-color;
+		text-align: center;
+	}
+	&-close {
+		color: $teg-color;
+		padding: 0;
+		font-size: 5rem;
+		border: 1px solid transparent;
+		&:hover, 
+		&:focus {
+			border: 1px solid $teg-color;
+		} 
+	}
+	&-body {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	&-footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-btn {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		color: $teg-color;
+		border: 1px solid $teg-color;
+		background-color: #fff;
+		outline: none!important;
+		text-transform: uppercase;
+		padding: 1rem;
+		text-decoration: none;
+		&:hover, 
+		&:focus {
+			background-color: $bg-gray;
+			text-decoration: none;
+			color: $teg-color;
+		}
+		&-form {
+			background-color: $teg-color;
+			color: #fff;
+		} 
+	}
+	&-tel {
+		font-size: 3rem;
+		@media screen and (max-width: 576px) {
+	 	font-size: 2rem;	   
+		}
+	}
+
+}
+// edit 19.04.2019 add modal-form
+.modal-form {
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+		input,.form__text {
+			margin: 1rem 0;
+			font-size: 1.6rem;
+			color: red;
+			border:1px solid $teg-color;
+			padding: 1rem;
+			border-radius:2px;
+
+
+		}
+		input:hover {
+			background-color: #9994;
+		}
+
+
+
+		input:focus {
+			outline: none; 
+			border-radius:2px; 
+						
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+		
+		
+
+}
+
+
+#carousel-example-generic {
+	// display: none;
+}
+
+.img-sample {
+	// display: inline-block;
+	//border: 1px solid #d1d1d1;
+	width: 10rem;
+	height: auto;
+}
+// изменяем цвет ссылок при наведении
+a {
+	&:hover {
+		color: #ebebeb;
+	}
+}
+
+.text-red {
+	color: $teg-color;
+	a:hover {
+		color: #000;
+	}
+}
+
+
+#navbarNav.navbar-light .navbar-nav .nav-link {
+	color: $text-color;
+}
+
