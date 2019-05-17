@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $('a[href*="#"]')
+  // change for nav-link (original: $('a[href*="#"]') )
+  $('a.nav-link[href*="#"]')
+  .add('a.section-title-link[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
