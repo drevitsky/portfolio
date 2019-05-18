@@ -4,8 +4,26 @@
 <script src="js/wow.min.js"></script>
 
 <script src="js/scripts.min.js"></script>
+
 <!-- <script src="js/jquery.fancybox.pack.js"></script> -->
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/plugins/TextPlugin.min.js"></script>
+	
+<script>
+	let forText = document.getElementById('forText');
+        let timeline = new TimelineMax();
+        
+        timeline.to(forText, 3, {text: 'knock, knock, Neo...', ease:Linear.easeNone})
+                .to(forText, 2, {text: ' '})
+                .to(forText, 3, {text: 'I am Web Developer'})
+                .to(forText, 2, {text: 'Frontender'})
+                .to(forText, 3, {text: 'my name Vsevolod'})
+                .to(forText, 3, {text: 'Vsevolod Drevitsky'})
+                .to(forText, 2, {text: 'V'})
+                .to(forText, 1, {text: 'VD Web :)'})
+                // .to(forText, 1, {text:{value:"Your new text",  newClass:"class2"}});
 
+</script>
