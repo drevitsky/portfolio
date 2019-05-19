@@ -165,7 +165,7 @@ $('#btn-starwars').on('click', function(e) {
 
              $('#titles').toggleClass('titles');
              $('#titlecontent').toggleClass('titlecontent');
-             $('#img-avatar').toggleAttrVal('src','img/ava-dw-600.jpg', 'img/ava-600.jpg');
+             $('#img-avatar').toggleAttrVal('src','img/ava-dw-600-2.jpg', 'img/ava-600-3.jpg');
             
              // 
              

@@ -86,6 +86,7 @@ footer {
  .lazy-load  {
  	
  }
+ 
  .not-load {
  	display: none;
  }
@@ -164,7 +165,7 @@ footer {
 	background:linear-gradient(110deg, transparent 13px,$bg-dark 14px );
 	background:linear-gradient(110deg, transparent 13px,$bg-dark 14px,$bg-dark 60%,transparent 50%),
 	   linear-gradient(250deg,transparent  13px,$bg-dark 14px, $bg-dark 60%,transparent 50% );
-    // box-shadow: 3px 0px 3px  -2px rgba(0,0,0,.5);
+    
    
     position: relative;
     &:after {
@@ -176,12 +177,11 @@ footer {
     	top:14px;
     	right: -7px;
     	 transform:  rotate(70deg);
-    	 box-shadow: 0px -4px 4px  -2px #0008;
-
-    	
+    	 box-shadow: 0px -4px 4px  -2px #0008; 	
 
 
     }
+    
     &:hover,
     &:focus,
     &:active,
@@ -238,7 +238,7 @@ footer {
 }
 .section-about {
 	.container {
-		height: 48rem;
+		min-height: 48rem;
 	}
 	
 }
@@ -329,6 +329,10 @@ footer {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
+	&--footer {
+		justify-content:center;
+		font-size: 2.4rem;
+	}
 }
 .social-link {
 	margin-right: 3rem;
@@ -1059,6 +1063,9 @@ a {
 }
 .starwars {
 
+}
+#titles {
+	background-color: #fff2;
 }
 .titles
 
