@@ -236,6 +236,12 @@ footer {
 .section {
 
 }
+.section-about {
+	.container {
+		height: 48rem;
+	}
+	
+}
 .section-title {
 	//text-align: center;
 	font-size: 3rem;
@@ -1051,6 +1057,50 @@ a {
 	filter:grayscale(100%);
 	
 }
+.starwars {
+
+}
+.titles
+
+{
+
+     position: relative;
+     margin: 0 auto;
+     width: 70%;
+     height: 70%;
+    // bottom: 0;
+    // left: 50%;
+    // margin-left: -9em;
+    // font-size: 350%;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 30%;
+    transform: perspective(300px) rotateX(25deg);
+
+}
+.titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+.titlecontent
+{
+	position: absolute;
+	top: 100%;
+	animation: scroll 40s linear  infinite;
+}
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
 
 
-// =======================
+

@@ -115,7 +115,7 @@ $("#btn-dark").on('click',function(e){
     $('.accent').addClass('variable-title-gray accent-border');
     $('.nav-link').addClass('variable-red-dark');
     $('img').addClass('variable-noncolor');
-    // $('#img-avatar').attr('src','img/ava-600-bw.jpg');
+    // $('#img-avatar').attr('src','img/ava-dw-600.jpg');
     
    });
 $("#btn-light").on('click',function(e){
@@ -159,4 +159,28 @@ $("#btn-light").on('click',function(e){
     }
 
 
+$('#btn-starwars').on('click', function(e) {
+    e.preventDefault();
+    console.log('click');
 
+             $('#titles').toggleClass('titles');
+             $('#titlecontent').toggleClass('titlecontent');
+             $('#img-avatar').toggleAttrVal('src','img/ava-dw-600.jpg', 'img/ava-600.jpg');
+            
+             // 
+             
+         });
+$.fn.toggleAttrVal = function(attr, val1, val2) {
+    var test = $(this).attr(attr);
+    if ( test === val1) {
+      $(this).attr(attr, val2);
+      return this;
+    }
+    if ( test === val2) {
+      $(this).attr(attr, val1);
+      return this;
+    }
+    // default to val1 if neither
+    $(this).attr(attr, val1);
+    return this;
+  };

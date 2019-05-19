@@ -21,6 +21,9 @@
 		
 	</head>
 <body>
+  
+    <div class="wrapper">
+        <div class="content">
 	<header>
 	<div class=" container ">
 	  <div class="header_info">
@@ -29,6 +32,7 @@
 	      <button class="btn btn-border" id="btn-light">яркенько</button>
 	      <!-- brightly -->
 	      <button class="btn btn-border" id="btn-dark">тускленько</button>
+	      <button class="btn btn-border" id="btn-starwars">starwars</button>
 	      <!-- dimly -->
 	    </div>
 	
@@ -87,10 +91,10 @@
 	
 	</div>
 	</header>
-
+    
 	<main>
         <div class="anchor" id="hello"></div>
-		<section class="section"  >
+		<section class="section section-about"  >
 
 			<div class="container  py-5">
 				<div class="section-title">about me</div>
@@ -102,42 +106,26 @@
 						<h3 class="site-subtitle wow slideInLeft">
 							FRONT-END / WEB-DEVELOPER
 						</h3>
-                        <p class="article-text text-center wow delay-1s fadeInDown">
-                                Профессионально занимаюсь разработкой сайтов
-                        </p>
-
-
-                      <!--   <div class="window">
-                            <div class="row row-window-title">
-                                <div class="window-title">
-                                Hello !
-                                </div>
-                                <div class="block-btn">
-                                    <div class="win-btn">
-                                        <div class="win-btn-1"></div>
-                                    </div>
-                                    <div class="win-btn">
-                                        <div class="win-btn-2"></div>
-                                    </div>
-                                    <div class="win-btn">
-                                        <div class="win-btn-3"></div>
-                                    </div>
-                                </div>
+                        <div id="titles" class="text-center wow delay-2s fadeInDown" >
+                            <div id="titlecontent">   
+                        <p class="article-text text-center  starwars">
+                                Привет! Меня зовут Всеволод я Front-end developer. 
+                                Я начинал с Basic в школе и Pascal в Университете.
+                                Изучал С++ в далёком 2001. Пробовал создавать приложения под Android.
+                                Свой первый интернет магазин на Joomla я заказал в веб-студии в 2008.
+                                Затем сам делал сайты на  конструкторах и готовых шаблонах CMS.
+                                Пришлось глубже изучать HTML, CSS и JS.</p>
+                                <p class="article-text text-center wow delay-2s fadeInDown">
+                                И мне понравилось,я понял что это то, чему хочу посвятить всего себя!
+                                В 2018 я решил систематизировать свои знания и прошёл два курса "Frontend" и "Backend" в Beetroot Academy.
+                                С тех пор не проходит дня без строчки кода. Сейчас я ищу работу в команде и открыт к предложениям. </p>
                             </div>
-                    
-                            <div class="row">
-                                <div class="window-wrap">
-                                    <div class="window-screen">
-                                        <p class >I am a Web Developer located in Mariupol,Ukraine. I currently work as a part time remote Web Developers. I am looking to take on more work and to increase my skills as a Web Developer</p>
-                                    </div>
-                                </div>
-                            </div>                    
-                    
-                        </div> -->
-						<!-- <div class="section-text">
-							<p>Hello!</p>
-							<p class >I am a Web Developer located in Mariupol,Ukraine. I currently work as a part time remote Web Developers. I am looking to take on more work and to increase my skills as a Web Developer.</p>
-						</div> -->
+                        </div>        
+
+                        
+
+
+                      
 						
 					</div>
 
@@ -1044,15 +1032,47 @@
 	                .to(forText, 3, {text: 'my name Vsevolod'})
 	                .to(forText, 3, {text: 'Vsevolod Drevitsky'})
 	                .to(forText, 2, {text: 'V'})
-	                .to(forText, 1, {text: 'VD Web :)'})
+	                .to(forText, 1, {text: 'VD :)'})
 	                // .to(forText, 1, {text:{value:"Your new text",  newClass:"class2"}});
 	
 	</script>
+<!--   <div class="window">
+                            <div class="row row-window-title">
+                                <div class="window-title">
+                                Hello !
+                                </div>
+                                <div class="block-btn">
+                                    <div class="win-btn">
+                                        <div class="win-btn-1"></div>
+                                    </div>
+                                    <div class="win-btn">
+                                        <div class="win-btn-2"></div>
+                                    </div>
+                                    <div class="win-btn">
+                                        <div class="win-btn-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="row">
+                                <div class="window-wrap">
+                                    <div class="window-screen">
+                                        <p class >I am a Web Developer located in Mariupol,Ukraine. I currently work as a part time remote Web Developers. I am looking to take on more work and to increase my skills as a Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                    
+                        </div> -->
+                        <!-- <div class="section-text">
+                            <p>Hello!</p>
+                            <p class >I am a Web Developer located in Mariupol,Ukraine. I currently work as a part time remote Web Developers. I am looking to take on more work and to increase my skills as a Web Developer.</p>
+                        </div> -->
 
 
 
 
-
+        </div>
+    </div>
 
 </body>
 </html>
