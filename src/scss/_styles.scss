@@ -48,7 +48,12 @@ main .container{
 	 background-color: $bg-color;
 }
 footer {
-	outline: 1px solid red;
+	// outline: 1px solid red;
+	.container{
+	// min-height: 100vh;
+	border-top: 1px solid $bg-gray;
+	 background-color: $bg-color;
+	}
 }
 
 #forText {
@@ -219,7 +224,7 @@ footer {
 	}
 }
 .col-lg-6 {
-	// outline:1px solid yellow;
+	 //outline:1px solid yellow;
 }
 .row {
 	margin: 0;
@@ -234,14 +239,17 @@ footer {
 	text-align: center;
 }
 .section {
-
-}
-.section-about {
 	.container {
-		min-height: 48rem;
+		min-height: 100vh;
 	}
 	
 }
+// .section-about {
+// 	.container {
+// 		min-height: 48rem;
+// 	}
+	
+// }
 .section-title {
 	//text-align: center;
 	font-size: 3rem;
@@ -344,6 +352,7 @@ footer {
 }
 
 .btn-box {
+	visibility: hidden;
 	.btn {
 		background-color:$bg-dark;
 		font-size: 1.6rem;
@@ -619,6 +628,7 @@ footer {
 }
 .exp-item {
 	margin-bottom: 2rem;
+
 	padding-left: 1.5rem;
 	border-left: 1px dotted $bg-gray;
 	&-title {
@@ -628,6 +638,11 @@ footer {
 	}
 	&-name {
 		color: $bg-gray;
+		//font-size: 1.8rem;
+	}
+	&-link {
+		color: $bg-gray;
+		cursor:pointer ;
 	}
 	&-data {
 		color: $value-color;
@@ -1013,7 +1028,7 @@ footer {
 }
 
 #carousel-example-generic {
-	// display: none;
+	 //display: none;
 }
 
 .img-sample {
