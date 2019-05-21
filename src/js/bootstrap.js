@@ -5,7 +5,7 @@
 //= ./collapse.js
 //= ./dropdown.js
 /// = ./tab.js
-/// = ./scrollspy.js
+//= ./scrollspy.js
 //= ./tooltip.js
 //= ./popover.js
 

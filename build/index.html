@@ -20,64 +20,83 @@
 		
 		
 	</head>
-<body>
+<body data-spy="scroll" data-target="#navbarNav" >
   
-    <div class="wrapper">
-        <div class="content">
+   
 	<header>
 	<div class=" container ">
 	  <div class="header_info">
-	    <a href="https://drevitsky.github.io">https://drevitsky.github.io</a>
-	    <div class="btn-box">
+	    <a href="https://drevitsky.github.io" class="header_info--link">https://drevitsky.github.io</a>
+	
+	   <!--  <div class="btn-box btn-box-hidden">
 	      <button class="btn btn-border" id="btn-light">яркенько</button>
-	      <!-- brightly -->
+	     
 	      <button class="btn btn-border" id="btn-dark">тускленько</button>
 	      <button class="btn btn-border" id="btn-starwars">starwars</button>
-	      <!-- dimly -->
-	    </div>
+	      
+	    </div> -->
+	    <div class="btn-box">
+	      <a href="en/index.html" class="btn btn-border btn-lang" id="btn-en">en</a>
 	
+	      <a href="ua/index.html" class="btn btn-border btn-lang" id="btn-ua">ua</a>
+	
+	      <a href="ru/index.html" class="btn btn-border btn-lang" id="btn-ru">ru</a>
+	      
+	      
+	    </div>
+	    <div id="forText">Hello World!!!</div>
 	    <div class="contact__item contact__item--tel">
 	
 	            
-	            <!-- <span>+380 50 422 77 23</span> -->
-	
+	            <!-- <img src="img/vd-logo.svg" width="60px" alt="vd-logo.svg"> -->
+	            <!-- <img src="img/vd-logo-2.svg"  alt="vd-logo-2.svg"> -->
 	          </div>
 	  </div>
 		<nav class="navbar navbar-expand-lg navbar-light ">
-	    <a class="navbar-brand" href="index.html"><div id="forText">Hello World!!!</div></a>
+	    <a class="navbar-brand" href="index.html"></a>
 	    
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
+	
+	      <!-- <span class="navbar-toggler-icon"> -->
+	        <!-- меню гамбургер старт html -->
+	        <span class="menu-tog ">
+	          <span class="menu-tog-item menu-tog-item1"></span>
+	          <span class="menu-tog-item menu-tog-item2"></span>
+	          <span class="menu-tog-item menu-tog-item3"></span>
+	        </span>
+	        <!-- меню гамбургер финиш -->
+	        <!-- <i class="fa fa-bars fa-3x" aria-hidden="true"></i> -->
+	      </span>
 	    </button>
 	    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	      <ul class="navbar-nav">
-	        <li class="nav-item active">
-	          <a class="nav-link" href="#hello">
+	        <li class="nav-item">
+	          <a class="nav-link"  href="#hello">
 	            <span class="nav-link--text">hello</span>
 	            <span class="sr-only">(current)</span></a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#skills">
+	          <a class="nav-link"  href="#skills">
 	          <span class="nav-link--text">skills</span>
 	        </a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#experience">
+	          <a class="nav-link"  href="#experience">
 	          <span class="nav-link--text">experience</span>
 	        </a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#education">
+	          <a class="nav-link"  href="#education">
 	          <span class="nav-link--text">education</span>
 	        </a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#portfolio">
+	          <a class="nav-link"  href="#portfolio">
 	          <span class="nav-link--text">portfolio</span>
 	        </a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#contact">
+	          <a class="nav-link"  href="#contact">
 	          <span class="nav-link--text">contact</span>
 	        </a>
 	        </li>
@@ -96,7 +115,7 @@
         <div class="anchor" id="hello"></div>
 		<section class="section section-about"  >
 
-			<div class="container  py-5">
+			<div class="container ">
 				<div class="section-title">about me</div>
 				<div class="row py-5">
 					<div class="col-lg-6 ">
@@ -121,32 +140,22 @@
                                 В 2018 я систематизировал свои знания и прошёл два 4-х месячных курса "Frontend" и "Backend". <!-- Я решил развиваться в направлении Frontendа. -->
                                 С тех пор не проходит дня без строчки кода. Сейчас я ищу работу в команде и открыт к предложениям. </p>
                             </div>
-                        </div>        
-
-                        
-
-
-                      
+                        </div>                     
 						
 					</div>
 
-					<div class="col-lg-6 text-center">
+					<div class="col-lg-6 text-center d-flex align-items-end">
 						<img src="img/ava-600-3.jpg"  alt="ava" class="img-fluid " id="img-avatar">
 
 					</div>	
-				</div>
-                
-				
-				
-				
-				
+				</div>				
 			</div>
 				
 		</section>
         <div class="anchor" id="skills"></div>
         <section class="section"  >
 
-            <div class="container  py-5">
+            <div class="container ">
                 <div class="section-title  wow slideInLeft"><a href="#skills" class="section-title-link" >my_skills</a></div>
                         <div class="row">
                             <div class="col-lg-6">
@@ -312,7 +321,7 @@
         <div class="anchor" id="experience"></div> 
         <section class="section"  >
 
-            <div class="container  py-5">
+            <div class="container ">
                 <div class="section-title  wow slideInLeft"><a href="#experience" class="section-title-link">my_experience</a></div>
                     <div class="row">
                         <div class="col-lg-3">
@@ -474,9 +483,9 @@
                 
         </section>
         <div class="anchor" id="education"></div> 
-        <section class="section "  >
+        <section class="section"  >
 
-            <div class="container  py-5">
+            <div class="container ">
                 <div class="section-title  wow slideInLeft"><a href="#education" class="section-title-link ">my_education</a></div>
                     <div class="row">
                         <div class="col-lg-3">
@@ -490,19 +499,19 @@
                                     <h4 class="exp-item-name"><span class="skill-item--name">Academy</span>Beetroot academy</h4>
                                     <div class="exp-item-data"><span class="skill-item--name">date</span>октябрь 2018-январь 2019</div>
                                     <div class="exp-item-description"><span class="skill-item--name">resume</span>
-                                        <div class="accent-border wow fadeInRightBig ">PHP</div>
-                                        <div class="accent-border wow fadeInRightBig ">СУБД MySql</div>
-                                        <div class="accent-border wow fadeInRightBig ">Проектирование баз данных</div>
-                                        <div class="accent-border wow fadeInRightBig ">SQL</div>
-                                        <div class="accent-border wow fadeInRightBig ">архитектура сайта/веб приложения</div>
-                                        <div class="accent-border wow fadeInRightBig delay-1s">фреймворк Laravel</div>
-                                        <div class="accent-border wow fadeInRightBig delay-1s">настройка apache/nginx</div>
-                                        <div class="accent-border wow fadeInRightBig delay-1s">composer</div>
-                                        <div class="accent-border wow fadeInRightBig delay-1s">Парадигмы программирования</div>
-                                        <div class="accent-border wow fadeInRightBig delay-1s">ООП</div>
-                                        <div class="accent-border wow fadeInRightBig delay-2s">регулярные выражения</div>
-                                        <div class="accent-border wow fadeInRightBig delay-2s">безопасность веб-приложений</div>
-                                        <div class="accent-border wow fadeInRightBig delay-2s">оптимизация веб-приложений</div>
+                                        <div class="accent-border wow  ">PHP</div>
+                                        <div class="accent-border wow  ">СУБД MySql</div>
+                                        <div class="accent-border wow  ">Проектирование баз данных</div>
+                                        <div class="accent-border wow  ">SQL</div>
+                                        <div class="accent-border wow  ">архитектура сайта/веб приложения</div>
+                                        <div class="accent-border wow  ">фреймворк Laravel</div>
+                                        <div class="accent-border wow  ">настройка apache/nginx</div>
+                                        <div class="accent-border wow  ">composer</div>
+                                        <div class="accent-border wow  ">Парадигмы программирования</div>
+                                        <div class="accent-border wow  ">ООП</div>
+                                        <div class="accent-border wow  ">регулярные выражения</div>
+                                        <div class="accent-border wow  ">безопасность веб-приложений</div>
+                                        <div class="accent-border wow  ">оптимизация веб-приложений</div>
                                     </div>
 
                                 </li>
@@ -597,166 +606,166 @@
                 
         </section>
         <div class="anchor" id="portfolio"></div>
-<section class="section"  >
+        <section class="section"  >
 
-    <div class="container  py-5">
-        <div class="section-title  wow slideInLeft "><a href="#portfolio" class="section-title-link" >my_portfolio</a>
-        </div>           
-      
+            <div class="container ">
+                <div class="section-title  wow slideInLeft "><a href="#portfolio" class="section-title-link" >my_portfolio</a>
+                </div>           
+              
 
-    
+            
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="portfolio-sort wow slideInRight slow">
-                    <ul class="list-inline">
-                        <li class="colored-link" data-mixitup-control data-filter="all">All projects</li>
-                        <li class="colored-link" data-mixitup-control data-filter=".web-sites">Web sites</li>
-                        <li class="colored-link" data-mixitup-control data-filter=".ui-ux-design">UI\UX design</li>
-                        <li class="colored-link" data-mixitup-control data-filter=".frontend">Frontend</li>
-                        <li class="colored-link" data-mixitup-control data-filter=".logo">Logo</li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portfolio-sort wow slideInRight slow">
+                            <ul class="list-inline">
+                                <li class="colored-link" data-mixitup-control data-filter="all">All projects</li>
+                                <li class="colored-link" data-mixitup-control data-filter=".web-sites">Web sites</li>
+                                <li class="colored-link" data-mixitup-control data-filter=".ui-ux-design">UI\UX design</li>
+                                <li class="colored-link" data-mixitup-control data-filter=".frontend">Frontend</li>
+                                <li class="colored-link" data-mixitup-control data-filter=".logo">Logo</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="portfolio">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="portfolio" title="Разработка сайта-портфолио" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-1-270.jpg" alt="portfolio-1-270">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portfolio">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="portfolio" title="Разработка сайта-портфолио" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/portfolio-1-270.jpg" alt="portfolio-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Разработка сайта-портфолио</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>май 2019</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Разработка сайта-портфолио</span>
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="uny" title="Web site for UNY org" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/site-1-270.jpg" alt="site-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Разработка клиентской и серверной части сайта общественной организации</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>ноябрь - декабрь 2018</div>
+                                    </a>
                                 </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>май 2019</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="uny" title="Web site for UNY org" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/site-1-270.jpg" alt="site-1-270">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="land-1" title="Создание лендинга заказа кухонь" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/landing-270.jpg" alt="landing-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Создание лендинга заказа кухонь</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>апрель 2019</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Разработка клиентской и серверной части сайта общественной организации</span>
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="meb-1" title="Разработка сайта каталога мебели" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/meb-1-270.jpg" alt="meb-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Разработка сайта каталога мебели</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>ноябрь - декабрь 2018</div>
+                                    </a>
                                 </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>ноябрь - декабрь 2018</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="land-1" title="Создание лендинга заказа кухонь" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/landing-270.jpg" alt="landing-270">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites frontend wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="creative-1" title="Верстка макета сайта Creative AGENCY" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/creative-1-270.jpg" alt="creative-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Верстка макета сайта Creative AGENCY</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>сентябрь 2018</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Создание лендинга заказа кухонь</span>
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-1" title="Создание и продвижение интернет магазина на конструкторе " href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/woodsky-1-270.jpg" alt="woodsky-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн, разработка и продвижение интернет магазина на конструкторе</span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2015-2017гг</div>
+                                    </a>
                                 </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>апрель 2019</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="meb-1" title="Разработка сайта каталога мебели" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/meb-1-270.jpg" alt="meb-1-270">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-2" title="Дизайн и вёрстка печатного каталога кроватей " href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/woodsky-catalog-1-270.jpg" alt="woodsky-catalog-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн и вёрстка печатного каталога кроватей </span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2015г</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Разработка сайта каталога мебели</span>
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-3" title="Дизайн и вёрстка печатного каталога прихожих Гринвич " href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/grinvich-1-270.jpg" alt="grinvich-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн и вёрстка печатного каталога прихожих Гринвич </span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2016г</div>
+                                    </a>
                                 </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>ноябрь - декабрь 2018</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites frontend wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="creative-1" title="Верстка макета сайта Creative AGENCY" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/creative-1-270.jpg" alt="creative-1-270">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix logo wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="logo-1" title="Дизайн логотипа для бренда мебели" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/woodsky-logo-1-270.jpg" alt="woodsky-logo-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн логотипа для бренда мебели </span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2015г</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Верстка макета сайта Creative AGENCY</span>
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix logo wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="logo-2" title="Дизайн логотипа для магазина одежды Roxy Boxy" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/roxy-logo-1-270.jpg" alt="roxy-logo-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн логотипа для магазина одежды Roxy Boxy </span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2013г</div>
+                                    </a>
                                 </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>сентябрь 2018</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-1" title="Создание и продвижение интернет магазина на конструкторе " href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/woodsky-1-270.jpg" alt="woodsky-1-270">
+                                <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
+                                    <a data-toggle="modal" data-target="#portfolio-modal" data-name="everest-1" title="Дизайн и вёрстка печатного каталога шкафов-купе" href="#" class="portfolio-box">
+                                        <div class="portfolio-img">
+                                            <img src="img/ever-1-270.jpg" alt="ever-1-270">
+                                        </div>
+                                        <div class="portfolio-name">
+                                            <span>Дизайн и вёрстка печатного каталога шкафов-купе </span>
+                                        </div>
+                                        <div class="exp-item-data"><span class="skill-item--name">date</span>2011г</div>
+                                    </a>
                                 </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн, разработка и продвижение интернет магазина на конструкторе</span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2015-2017гг</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-2" title="Дизайн и вёрстка печатного каталога кроватей " href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/woodsky-catalog-1-270.jpg" alt="woodsky-catalog-1-270">
-                                </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн и вёрстка печатного каталога кроватей </span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2015г</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="woodsky-3" title="Дизайн и вёрстка печатного каталога прихожих Гринвич " href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/grinvich-1-270.jpg" alt="grinvich-1-270">
-                                </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн и вёрстка печатного каталога прихожих Гринвич </span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2016г</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix logo wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="logo-1" title="Дизайн логотипа для бренда мебели" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/woodsky-logo-1-270.jpg" alt="woodsky-logo-1-270">
-                                </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн логотипа для бренда мебели </span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2015г</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix logo wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="logo-2" title="Дизайн логотипа для магазина одежды Roxy Boxy" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/roxy-logo-1-270.jpg" alt="roxy-logo-1-270">
-                                </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн логотипа для магазина одежды Roxy Boxy </span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2013г</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 mix ui-ux-design wow flipInX">
-                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="everest-1" title="Дизайн и вёрстка печатного каталога шкафов-купе" href="#" class="portfolio-box">
-                                <div class="portfolio-img">
-                                    <img src="img/ever-1-270.jpg" alt="ever-1-270">
-                                </div>
-                                <div class="portfolio-name">
-                                    <span>Дизайн и вёрстка печатного каталога шкафов-купе </span>
-                                </div>
-                                <div class="exp-item-data"><span class="skill-item--name">date</span>2011г</div>
-                            </a>
-                        </div>
 
-                        
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-   
-</section>
+           
+        </section>
 
         <div class="anchor" id="contact"></div>
         <section class="section">
-            <div class="container  py-5">
+            <div class="container ">
                 <div class="section-title  wow slideInLeft"><a href="#contact" class="section-title-link" >my_contacts</a></div>
                 <div class="row">
                     <div class="col-lg-3">
@@ -769,21 +778,21 @@
                     <div class="col-lg-9">        
                             <ul class="exp-list">
                                 <li class="exp-item">
-                                    <span class="contact-name">phone</span>
+                                    <span class="skill-item--name">phone</span>
                                     <a href="tel:+380504227723" class="contact-text">+380 50 422 7723</a>
                                             
                                 </li>
                                 <li class="exp-item">
-                                    <span class="contact-name">e-mail</span>
+                                    <span class="skill-item--name">e-mail</span>
                                     <a href="mailto:iq180@ukr.net" class="contact-text">iq180@ukr.net</a>
                                     <!-- <span class="contact-text">iq180@ukr.net</span> -->
                                 </li>
                                 <li class="exp-item">
-                                    <span class="contact-name">address</span>
+                                    <span class="skill-item--name">address</span>
                                     <span class="contact-text">Kuprina str. Mariupol 87537 Ukraine</span>
                                 </li>
                                 <li class="exp-item contact-item contact-item--social">
-                                    <span class="contact-name">social</span>
+                                    <span class="skill-item--name">social</span>
                                     <ul class="social-list contact-text">
                                         <li class="social-item">
                                             <a href="https://www.facebook.com/drevitsky" class="social-link" title="myFacebook"><i class="fa fa-facebook"></i></a>
@@ -858,7 +867,15 @@
 				<div class="col copirate text-uppercase text-center">
 					<span>© 2019 <a class="copirate__link" href="#">portfolio</a> by Drevitsky. All Rights Reserved.</span>
 				</div>
+	
 			</div>
+			<div class="row text-center">
+				<div class="col">
+					<a href="#" id="add-btn" >Add button styles</a>
+				</div>
+				
+			</div>
+			
 		</div>
 		
 	</section>
@@ -1319,8 +1336,7 @@
 
 
 
-        </div>
-    </div>
+       
 
 </body>
 </html>
