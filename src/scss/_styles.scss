@@ -2,9 +2,10 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 $text-font:'Arimo', sans-serif;
-
+$art-font:'Special Elite',serif;
 $text-color: #e5db74;
 
 $teg-color: #eb246d;
@@ -61,10 +62,13 @@ footer {
 	position: absolute;
 	top: 15px;
 	right: 50px;
+	font: 400 1.6rem/1.5 $art-font;
 	font-size: 2rem;
-	color: #fff;
+	color: #9cffc5;
+	text-shadow:1px 0 2px green;
 	// outline: 1px solid red;
 	height: 34px;
+	filter: blur(1px);
 	.class2 {
 		color: green;
 	}
